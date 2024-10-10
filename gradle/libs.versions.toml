@@ -1,0 +1,50 @@
+[versions]
+agp = "8.5.1"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.2"
+constraintlayout = "2.1.4"
+moshi = "1.14.0"
+moshi-kotlin = "1.14.0"
+retrofit = "2.9.0"
+converter-moshi = "2.9.0"
+okhttp = "4.10.0"
+logging-interceptor = "4.10.0"
+kotlinx-coroutines-core = "1.6.0"
+lifecycle-runtime-ktx = "2.5.1"
+coil = "2.2.2"
+coil-svg = "2.2.2"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+# RETROFIT, OKHTTPの導入
+retrofit ={module ="com.squareup.retrofit2:retrofit", version.ref = "retrofit"}
+converter-moshi = {module ="com.squareup.retrofit2:converter-moshi", version.ref = "converter-moshi"}
+okhttp = {module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp"}
+logging-interceptor = {module = "com.squareup.okhttp3:logging-interceptor",version.ref = "logging-interceptor"}
+# moshi
+moshi = {module = "com.squareup.moshi:moshi",  version.ref = "moshi"}
+moshi-kotlin = {module = "com.squareup.moshi:moshi-kotlin",  version.ref = "moshi-kotlin"}
+# coilの導入
+coil = {module = "io.coil-kt:coil", version.ref = "coil"}
+coil-svg = {module = "io.coil-kt:coil-svg", version.ref = "coil-svg"}
+#Coroutinesの導入
+kotlinx-coroutines-core = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core"}
+lifecycle-runtime-ktx = {module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
